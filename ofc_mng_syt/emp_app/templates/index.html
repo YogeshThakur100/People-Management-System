@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background: url('https://source.unsplash.com/1600x900/?office,employees') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .header h1 {
+            position: relative;
+            z-index: 1;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+x
+        .header p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .container {
+            margin-top: -40px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card .card-body {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-top: 15px;
+            color: #007bff;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, #007bff, transparent);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Employee Management System</h1>
+        <p>Manage all your employee-related tasks with ease and efficiency</p>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Quick Actions</h2>
+        <hr>
+        <div class="card-group">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">View All Employees</h3>
+                    <p class="card-text">Get a complete overview of all employees in the system.</p>
+                    <a href="/All_emp" class="btn btn-primary text-white">Go to View</a>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Add an Employee</h3>
+                    <p class="card-text">Quickly add new employees to the database.</p>
+                    <a href="/Add_emp" class="btn btn-success text-white">Go to Add</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group mt-4">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Remove an Employee</h3>
+                    <p class="card-text">Easily remove employees from the system.</p>
+                    <a href="/Remove_emp" class="btn btn-danger text-white">Go to Remove</a>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h3 class="card-title">Filter Employees</h3>
+                    <p class="card-text">Filter employees based on specific criteria.</p>
+                    <a href="/Filter_emp" class="btn btn-warning text-white">Go to Filter</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
