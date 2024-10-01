@@ -48,6 +48,8 @@ This is a **People Management System** built using Django, a high-level Python w
    http://127.0.0.1:8000.
 
 ### Video Overview
+https://github.com/user-attachments/assets/b489b331-1e27-4971-bd55-09ffd983b132
+
 
 
 
